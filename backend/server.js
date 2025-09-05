@@ -9,10 +9,9 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: "https://route-planner-chi.vercel.app/", 
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
+  origin: "https://route-planner-chi.vercel.app"
 }));
+
 app.use(express.json());
 
 // MongoDB connection
